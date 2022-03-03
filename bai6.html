@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap" type="text">
+<button onclick="show()" >Enter</button>
+<p id="rs" >hiện kq ở đây </p>
+</body>
+<script>
+    //xem số có trong mảng không?
+
+    let numbers = [1,10,11,2,3,5,22,19,23,4];
+    let result = document.getElementById('rs');
+    function show(){
+        let x = +document.getElementById('nhap').value;
+        for (let i=0;i<numbers.length;i++){
+
+            if (x===numbers[i]){
+                result.innerHTML= x + ' thuộc array';
+                break;
+
+            }else {
+                result.innerHTML = x + ' không thuộc array';
+            }
+        }
+    }
+</script>
+</html>
